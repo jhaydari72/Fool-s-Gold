@@ -1,69 +1,15 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://key_static_v1.png" type="Texture" id=1]
-[ext_resource path="res://room_back_wall_v1.png" type="Texture" id=2]
-[ext_resource path="res://room_right_wall_v1.png" type="Texture" id=3]
-[ext_resource path="res://hall_straight_horiz_v1.png" type="Texture" id=4]
-[ext_resource path="res://room_front_wall_v1.png" type="Texture" id=5]
-[ext_resource path="res://hall_corner_right_v1.png" type="Texture" id=6]
-[ext_resource path="res://room_center_v1.png" type="Texture" id=7]
-[ext_resource path="res://room_left_wall_v1.png" type="Texture" id=8]
-[ext_resource path="res://hall_tile_straight_vert_v1.png" type="Texture" id=9]
-[ext_resource path="res://hall_corner_left_v1.png" type="Texture" id=10]
 
 [sub_resource type="TileSet" id=1]
 
 [node name="world" type="Node2D"]
 
 [node name="TileMap" type="TileMap" parent="."]
+mode = 1
 tile_set = SubResource( 1 )
 format = 1
-
-[node name="hall_corner_left_v1" type="Sprite" parent="TileMap"]
-position = Vector2( 990.024, 31.9384 )
-texture = ExtResource( 10 )
-
-[node name="hall_corner_right_v1" type="Sprite" parent="TileMap"]
-position = Vector2( 30.5356, 31.1647 )
-texture = ExtResource( 6 )
-
-[node name="hall_straight_horiz_v1" type="Sprite" parent="TileMap"]
-position = Vector2( 926.574, 31.9384 )
-texture = ExtResource( 4 )
-
-[node name="room_front_wall_v1" type="Sprite" parent="TileMap"]
-position = Vector2( 35.952, 162.707 )
-texture = ExtResource( 5 )
-
-[node name="room_back_wall_v1" type="Sprite" parent="TileMap"]
-position = Vector2( 863.897, 31.1646 )
-scale = Vector2( 1, 0.975819 )
-texture = ExtResource( 2 )
-
-[node name="room_center_v1" type="Sprite" parent="TileMap"]
-position = Vector2( 930.443, 95.3885 )
-texture = ExtResource( 7 )
-
-[node name="room_left_wall_v1" type="Sprite" parent="TileMap"]
-position = Vector2( 927.348, 158.839 )
-texture = ExtResource( 8 )
-
-[node name="room_right_wall_v1" type="Sprite" parent="TileMap"]
-position = Vector2( 866.606, 95.3884 )
-scale = Vector2( 1.10881, 1 )
-texture = ExtResource( 3 )
-
-[node name="hall_tile_straight_vert_v1" type="Sprite" parent="TileMap"]
-position = Vector2( 990.797, 93.8409 )
-texture = ExtResource( 9 )
-
-[node name="hall_tile_straight_vert_v3" type="Sprite" parent="TileMap"]
-position = Vector2( 990.797, 219.193 )
-texture = ExtResource( 9 )
-
-[node name="hall_tile_straight_vert_v2" type="Sprite" parent="TileMap"]
-position = Vector2( 990.797, 156.517 )
-texture = ExtResource( 9 )
 
 [node name="spr_key" type="Sprite" parent="."]
 position = Vector2( 928.662, 94.1552 )
