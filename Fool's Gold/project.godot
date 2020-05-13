@@ -16,6 +16,7 @@ _global_script_class_icons={
 [application]
 
 config/name="Fool's Gold"
+run/main_scene="res://Fool's gold.tscn"
 config/icon="res://icon.png"
 
 [rendering]
