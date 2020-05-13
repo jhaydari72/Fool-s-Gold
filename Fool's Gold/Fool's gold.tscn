@@ -146,8 +146,19 @@ position = Vector2( 340.821, 217.788 )
 scale = Vector2( 0.66147, 0.697742 )
 texture = ExtResource( 1 )
 
+<<<<<<< HEAD
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource( 1 )
 cell_tile_origin = 1
 format = 1
 tile_data = PoolIntArray( 0, 0, 0, 196620, 0, 0, 327680, 0, 0 )
+=======
+[node name="KinematicBody2D" type="KinematicBody2D" parent="."]
+script = SubResource( 1 )
+
+[node name="Spr_player" type="Sprite" parent="KinematicBody2D"]
+position = Vector2( 141, 75 )
+texture = ExtResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="KinematicBody2D"]
+>>>>>>> d679f07553d11485734bff30e2901cd729d75ba7
